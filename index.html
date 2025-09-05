@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Watering Reminder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 Crop Watering Reminder</h1>
+    <label for="crop">Choose your crop:</label>
+    <select id="crop">
+      <option value="rice">Rice</option>
+      <option value="wheat">Wheat</option>
+      <option value="cotton">Cotton</option>
+    </select>
+
+    <label for="lastWatered">Last watered on:</label>
+    <input type="date" id="lastWatered" />
+
+    <button onclick="checkWatering()">Check Reminder</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
